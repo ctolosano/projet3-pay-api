@@ -1,0 +1,29 @@
+:root {
+    --demo-button-color: white;
+    --demo-button-bg-color: #BA4270;
+
+}
+
+button {
+    color: var(--demo-button-color);
+    background-color: var(--demo-button-bg-color);
+    border-radius: 30px;
+    border: 0;
+    font-family: "Public Sans", sans-serif;
+    padding: 15px;
+    font-weight: 700;
+}   
+
+header {
+    justify-content: space-between;
+    display: flex;
+}
+
+ul {
+    display: none;
+}
+.demo-button {
+    justify-content: end;
+    display: none;
+}
+
