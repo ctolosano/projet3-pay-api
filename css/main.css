@@ -1,29 +1,100 @@
-:root {
-    --demo-button-color: white;
-    --demo-button-bg-color: #BA4270;
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Chango&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+/* font-family: "DM Serif Display", serif; */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Chango&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+/*   font-family: "Public Sans", sans-serif; */
 
+:root {
+	--demo-button-color: white;
+	--demo-button-bg-color: #ba4270;
+	--hover-text-color: #36536b;
 }
 
+body {
+	padding: 10px;
+}
 button {
-    color: var(--demo-button-color);
-    background-color: var(--demo-button-bg-color);
-    border-radius: 30px;
-    border: 0;
-    font-family: "Public Sans", sans-serif;
-    padding: 15px;
-    font-weight: 700;
-}   
+	color: var(--demo-button-color);
+	background-color: var(--demo-button-bg-color);
+	border-radius: 30px;
+	border: 0;
+	font-family: "Public Sans", sans-serif;
+	padding: 15px;
+	font-weight: 700;
+}
 
 header {
-    justify-content: space-between;
-    display: flex;
+	justify-content: flex-end;
+	display: flex;
 }
 
 ul {
-    display: none;
-}
-.demo-button {
-    justify-content: end;
-    display: none;
+	display: none;
 }
 
+a {
+	color: #36536b;
+	text-decoration: none;
+	margin-right: 10px;
+	font-family: "Public Sans", sans-serif;
+}
+
+.Schedule-a-demo {
+	color: white;
+	display: flex;
+	width: max-content;
+}
+
+a:hover {
+	font-weight: 700;
+}
+.demo-button {
+	justify-content: end;
+	display: none;
+}
+
+.div-demo-button {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.div-phone-illustration {
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (min-width: 320px) {
+	ul {
+		display: flex;
+	}
+	.menu-burger {
+		display: none;
+	}
+	header {
+		justify-content: start;
+		align-items: center;
+	}
+	.demo-button {
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	main {
+		height: 90%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (max-width: 320px) {
+	.menu-burger {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+.Pay-Api-Logo {
+	max-width: none; 
+}
